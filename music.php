@@ -14,11 +14,11 @@ $title = "Music | TIE DYE";
 		<section>
 			    <div class="event container-fluid">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                             <img class="img-responsive" src="media/music/basinski.jpg">
                         </div>
                     </div>
-                    <div class=" col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+                    <div class=" col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
                         <div class="text-center">
                             <br>
                             <p class="event-date">17.11.2014</p>

@@ -180,7 +180,7 @@ body#creativeservices a#creativeservices- {
     } 
 
     .navbar-default {
-        opacity:1.0;
+        opacity:0.9;
         margin-top:0px;
         height:auto;
     }
@@ -323,7 +323,7 @@ section {
         background: url("../media/phone003.jpg") no-repeat center center fixed;
     }
     .bg-music {
-        background: url("../media/phone001.jpg") no-repeat top center fixed;
+        background: url("../media/phone001.jpg") no-repeat center center fixed;
     }
     .bg-style {
         background: url("../media/phone008.jpg") no-repeat center center fixed;
@@ -338,6 +338,7 @@ section {
 } */
 
 .event {
+	padding-top:100px;
     padding-bottom:40px;
 }
 

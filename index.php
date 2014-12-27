@@ -10,7 +10,7 @@ $title = "TIE DYE";
         </section>
 
 		<img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="media/phone007.jpg">
-		<section><h1>Hej</h1></section>
+		<section></section>
         
 <!-- end of main content -->
         
