@@ -1,0 +1,499 @@
+/*
+---------- General -------------
+*/
+
+ /* Common margin & padding for all browsers */
+html, body { 
+    margin:0;
+    padding:0;
+}
+
+html { 
+    overflow-y:scroll; /* Always display the scrollbar, avoid flipping pages */
+    /* background:#FFFFFF; Background color for whole browser window */ /* COULDN'T ADD THIS --> the colored square on music dissapeared*/
+}
+
+/* Fonts */
+p, h1, h2, h3, h4, h5, h6, a, .p, .h1, .h2, .h3, .h4, .h5, .h6, .a, .footer-li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    }
+
+.navFont {
+    font-family: 'Ubuntu';  
+}
+    
+/* Added this to get rid of the white space on the right side of the content on small devices in firefox */
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+    
+/* 
+---------------- html5 elements ----------------
+*/
+
+header,footer,nav,article,section,aside,figure,figcaption {
+    display:block;
+}
+
+/*
+---------- navigation menu -------------
+*/
+.navbar-default {
+	background-color:#FFF; 
+        border-bottom-color: #99999;
+        padding-top:10px;
+	margin-top:0px;
+	margin-bottom:0px;
+	opacity:0.7;
+        height:80px;
+}
+
+#nav-logo {
+   height:50px;
+   margin:-15px;
+   margin-left:20px;
+   margin-right:20px; 
+}
+
+.nav-left {
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover,  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a:focus {
+   background-color: transparent;
+   text-decoration: underline;
+   outline-color: transparent;
+}
+
+.navbar-nav > li {
+    font-size:13px;
+}
+
+.navbar-collapse {
+    text-align:center; 
+    max-height:320px;      
+}
+
+.navbar-nav > li > a, .navbar-nav > li > a:link, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:visited {
+    line-height:27px;
+    height:60px;	
+    background-color: transparent;
+    outline-color: transparent;
+}
+
+.navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+#collapsed-logo {
+    height:60px;
+    margin-top:-5px;       
+}
+
+/* highlight current choice in navigation menu
+--------------------------------------------------------
+*/
+
+/* The rule will be applied then body#id and a#id is matching */
+body#art a#art-,
+body#music a#music-,
+body#culture a#culture-,
+body#style a#style-,
+body#index a#index-,
+body#brothersandsisters a#brothersandsisters-,
+body#kparty a#kparty-,
+body#creativeservices a#creativeservices- {
+    text-decoration: underline;
+}
+
+/* The collapse breakpoint */
+@media screen and (max-width:1075px) {
+    
+    
+    .navbar-brand {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    height: 50px;
+    width: 200px;  /* bootstrap has max-width: 200px rule */
+    margin-left: -100px;
+    margin-top: 8px;
+    text-align: center;
+    }  
+
+    .navbar-header {
+        float: none;
+    }
+    
+    .navbar-toggle {
+        display: block;
+    }
+    
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    
+    .navbar-nav>li {
+        float: none;
+        margin:0;
+        height:45px; 
+    }
+    
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    
+    .collapsing {
+        overflow: hidden!important;
+    }
+    
+    .navbar-left {
+	float: none!important;
+    }
+    
+    .navbar-nav {
+        display: block;
+    } 
+
+    .navbar-default {
+        opacity:1.0;
+        margin-top:0px;
+        height:auto;
+    }
+}
+
+/* for making the brand stay centered on different screen sizes */
+@media screen and (min-width:1007px) and (max-width:1075px) {
+    .navbar-brand {
+        left: 42%;
+    }  
+}
+    
+@media screen and (min-width:930px) and (max-width:1006px) {
+    .navbar-brand {
+        left: 41%;
+    }  
+}
+
+@media screen and (min-width:769px) and  (max-width: 929px) {
+    .navbar-brand {
+        left: 40%;
+    } 
+    
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        left: 50%;
+    }
+
+}
+
+/* Fixed the bug that made the logo go to much to the right at 768px */
+@media screen and (width:768px) {
+    .navbar-brand {
+        left: 40%;
+    }
+}
+
+/* in journal.css I changed @media (min-width: 992px) and (max-width: 1152px) {  I changed max-width from 1199 to 1152 so the brand would show/not show in the right sizes --> collapsed or not collapsed
+  .visible-md and also in the class hidden-md 
+    and in the .visible-lg --> 1153px & hidden-lg --> 1153px */
+
+
+section {
+    height:750px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+
+.bg-1 {
+    background: url("../media/img007.jpg") no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+
+}
+
+.bg-art  {
+    background: url("../media/img002.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-brothersandsisters {
+    background: url("../media/img004.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-culture  {
+    background: url("../media/img013.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-creativeservices {
+    background: url("../media/img006.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-kparty {
+    background: url("../media/img003.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-music {
+    background: url("../media/img001.jpg") no-repeat center center fixed;
+    /*background: url("../media/music/illustrations/music.jpg") no-repeat center center fixed; */
+    background-size: cover;
+}
+
+.bg-style  {
+    background: url("../media/img008.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-style1 {
+    background: #FF6050 no-repeat center center fixed;
+    background-size:cover;
+}
+
+.bg-style2 {
+    background: white no-repeat top center fixed;
+    background-size:cover;
+}
+
+.square {
+    background-color: beige;
+    z-index: -100;
+    height:700px;
+    position: absolute;
+    margin-top:240px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .bg-1 {
+        background: url("../media/phone007.jpg") no-repeat center center fixed;
+    }
+    .bg-art {
+        background: url("../media/phone002.jpg") no-repeat center center fixed;
+    }
+    .bg-brothersandsisters {
+        background: url("../media/phone004.jpg") no-repeat center center fixed;
+    }
+    .bg-culture {
+        background: url("../media/phone013.jpg") no-repeat center center fixed;
+    }
+     .bg-creativeservices {
+        background: url("../media/phone006.jpg") no-repeat center center fixed;
+    }
+    .bg-kparty {
+        background: url("../media/phone003.jpg") no-repeat center center fixed;
+    }
+    .bg-music {
+        background: url("../media/phone001.jpg") no-repeat center center fixed;
+    }
+    .bg-style {
+        background: url("../media/phone008.jpg") no-repeat center center fixed;
+    }
+    
+
+}
+
+/* .bg-style3 {
+    background: white no-repeat top center fixed;
+    background-size:cover;
+} */
+
+.event {
+    padding-bottom:40px;
+}
+
+.event-type {
+    font-size:20px;
+}
+
+.event-name {
+    font-size:50px;
+}
+
+.event-date {  
+}
+
+.event-desc {
+    font-size:20px;
+    font-weight: 100;
+    padding-bottom: 80px;
+}
+
+/* ---------- footer ------------- */
+
+.footer {
+    background-color: whitesmoke;
+    padding-left:20px;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+.footer-hr {
+    margin-top:0;
+    padding-left:0px;
+    padding-right:0px;
+    margin-left:0px;
+    color:#999999;
+    background-color:#999999;
+    border:none;
+    height: 1px;
+    margin-bottom:30px;
+}
+
+.footer-li {
+    display:inline-block;
+}
+
+.footer-ul {
+    padding-left:0px;
+    display:inline-block;   
+}
+
+.social-ul {
+    float:right;
+    margin-top:21px;
+    
+}
+/* Media queries --> rules (main content and footer )applied to phones*/
+@media screen and (max-width: 767px) {
+    .event-type {
+        font-size:13px;
+    }
+
+    .event-name {
+        font-size:25px;
+    }
+
+    .event-date {
+    }
+
+    .event-desc {
+        font-size:15px;
+    }
+    
+    .social-ul {
+        margin-top:0px;
+    }
+    
+    #footer-vimeo {
+       padding-right:15px;
+    }
+    
+    .footer-hr {
+        margin-bottom: 10px;
+    }
+    
+    .square {
+        margin-left:0px;
+    }
+
+}
+
+#footer-about {
+    margin-right:20px;
+}
+
+#footer-contact {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.footer-social {
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+#footer-facebook {
+    margin-left:15px;
+}
+
+#footer-vimeo {
+    margin-right:0px;
+}
+
+
+.footer-a, .footer-a:hover, .footer-a:focus, .footer-a:visited {
+    color:#999999;
+    outline-color: transparent;
+    text-decoration: none; 
+}
+
+.copyright {
+    color: #999999;
+}
+
+.footer-h {
+    color: #999999;
+}
+
+.addressSmall, .addressSmall:hover, .addressSmall:focus, .addressSmall:visited {
+    font-size: 20px;
+    color:#999999;
+    outline-color: transparent;
+    text-decoration: none;
+    
+}
+
+.addressBig, .addressBig:hover, .addressBig:focus, .addressBig:visited {
+    font-size: 40px;
+    color:#999999;
+    outline-color: transparent;
+    text-decoration: none;
+}
+address {
+    margin-bottom: 0px;
+}
+
+/* To make the video responsive */
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px; overflow: hidden;
+}
+
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* For the navbar not to overlap the main content, this code must be placed after the media queries (responsive CSS) */
+body {
+    padding-top:0px;
+}
