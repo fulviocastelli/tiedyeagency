@@ -6,8 +6,14 @@ $title = "Music | TIE DYE";
 
 <!-- start of main content --> 
 
-        <section class="bg-music">
+        <section class="hidden-xs visible-sm visible-md visible-lg bg-music">
         </section>
+
+		<img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="media/phone001.jpg">
+
+		<section>
+			<h1>Hej</h1>
+		</section>
         <!--<div class="event container-fluid">
                     <br>
                     <br>

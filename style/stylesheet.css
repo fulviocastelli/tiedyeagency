@@ -226,17 +226,23 @@ body#creativeservices a#creativeservices- {
 
 
 section {
-    height:750px;
-    padding-top:50px;
+    min-height:750px;
+    /*padding-top:50px;
     padding-bottom:50px;
-    overflow:auto;
+    overflow:auto;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
 }
+
 
 
 .bg-1 {
     background: url("../media/img007.jpg") no-repeat center center fixed;
     color:#fff;
-    background-size:cover;
+	background-size: cover;
 
 }
 
@@ -296,8 +302,10 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+
+	
     .bg-1 {
-        background: url("../media/phone007.jpg") no-repeat center center fixed;
+        background: url("../media/phone007.jpg") no-repeat top center fixed;
     }
     .bg-art {
         background: url("../media/phone002.jpg") no-repeat center center fixed;
@@ -315,7 +323,7 @@ section {
         background: url("../media/phone003.jpg") no-repeat center center fixed;
     }
     .bg-music {
-        background: url("../media/phone001.jpg") no-repeat center center fixed;
+        background: url("../media/phone001.jpg") no-repeat top center fixed;
     }
     .bg-style {
         background: url("../media/phone008.jpg") no-repeat center center fixed;

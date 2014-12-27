@@ -6,9 +6,11 @@ $title = "TIE DYE";
 
 <!-- start of main content --> 
 
-        <!--parallax 1 -->
-        <section class="bg-1">
+		<section class="hidden-xs visible-sm visible-md visible-lg bg-1">
         </section>
+
+		<img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="media/phone007.jpg">
+		<section><h1>Hej</h1></section>
         
 <!-- end of main content -->
         
